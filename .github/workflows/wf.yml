@@ -1,0 +1,12 @@
+name: WF
+
+on:
+  workflow_dispatch:
+
+jobs:
+  echo:
+    uses: MyPrivateOrgMB/FirstRepo/.github/workflows/reusable.yml@main
+    with:
+      SUPER_VAR: hi
+    secrets: inherit
+    
